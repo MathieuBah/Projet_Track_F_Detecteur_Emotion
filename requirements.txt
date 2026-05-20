@@ -1,8 +1,8 @@
-opencv-contrib-python-headless
+streamlit
 torch
 torchvision
-transformers
 Pillow
 numpy
-grad-cam
-streamlit
+transformers==4.40.2
+pytorch-grad-cam
+opencv-python-headless
