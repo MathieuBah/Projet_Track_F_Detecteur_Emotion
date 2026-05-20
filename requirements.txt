@@ -6,3 +6,4 @@ numpy
 transformers==4.40.2
 pytorch-grad-cam
 opencv-python-headless
+libgl1
