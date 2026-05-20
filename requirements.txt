@@ -4,6 +4,6 @@ torchvision
 Pillow
 numpy
 transformers==4.40.2
-pytorch-grad-cam
+grad-cam
 opencv-python-headless
 libgl1
