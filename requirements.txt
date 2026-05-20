@@ -1,6 +1,5 @@
 opencv-contrib-python-headless
 opencv-python
-cv2
 torch
 torchvision
 transformers
