@@ -118,7 +118,7 @@ if uploaded_file is not None:
                 original_convnext_requires_grad_state[name] = param.requires_grad
                 param.requires_grad = True
 
-            with GradCAM(model=wrapped_model, target_layers=target_layer, use_cuda=True if device.type=='cuda' else False) as cam:
+            with GradCAM(model=wrapped_model, target_layers=target_layer, use_cuda=False) as cam:
                 grayscale_cam = cam(input_tensor=input_tensor, targets=None)[0]
 
             # Restore original requires_grad state
