@@ -5,3 +5,4 @@ Pillow
 numpy
 grad-cam
 streamlit
+opencv-python
