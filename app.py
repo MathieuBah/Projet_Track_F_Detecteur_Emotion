@@ -42,7 +42,7 @@ class ConvNeXtWrapper(torch.nn.Module):
 def load_model_and_device():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model = AutoModelForImageClassification.from_pretrained(
-        './model_weights',  # ConvNeXt-Tiny pré-entraîné sur ImageNet
+        'facebook/convnext-tiny-224',  # ConvNeXt-Tiny pré-entraîné sur ImageNet
         num_labels=4,                  # 4 émotions : angry, happy, neutral, sad
         ignore_mismatched_sizes=True,  # remplace la tête 1000 classes par une tête 4 classes
     )
